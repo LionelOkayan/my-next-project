@@ -7,8 +7,6 @@ import cx from "classnames";
 import styles from "./index.module.css";
 
 export default function Menu() {
-  // const open = () => {
-  // document.querySelector("nav")?.classList.add(styles.open);
   const [isOpen, setOpen] = useState<boolean>(false);
   const open = () => setOpen(true);
   const close = () => setOpen(false);
