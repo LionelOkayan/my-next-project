@@ -2,44 +2,6 @@ import Image from "next/image";
 import { getMembersList } from "@/app/_libs/microcms";
 import styles from "./page.module.css";
 
-// const data = {
-//   contents: [
-//     {
-//       id: "1",
-//       image: {
-//         url: "/img-member1.jpg",
-//         width: 240,
-//         height: 240,
-//       },
-//       name: "デイビッド・チャン",
-//       position: "CEO",
-//       profile: "グローバルテクノロジー企業での豊富な経験を持つリーダー",
-//     },
-//     {
-//       id: "2",
-//       image: {
-//         url: "/img-member2.jpg",
-//         width: 240,
-//         height: 240,
-//       },
-//       name: "エミリー・サンダーズ",
-//       position: "COO",
-//       profile: "グローバルテクノロジー企業での豊富な経験を持つリーダー",
-//     },
-//     {
-//       id: "3",
-//       image: {
-//         url: "/img-member3.jpg",
-//         width: 240,
-//         height: 240,
-//       },
-//       name: "ジョン・ウィルソン",
-//       position: "CTO",
-//       profile: "グローバルテクノロジー企業での豊富な経験を持つリーダー",
-//     },
-//   ],
-// };
-
 export default async function Page() {
   const data = await getMembersList();
   return (
