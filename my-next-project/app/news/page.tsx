@@ -4,9 +4,6 @@ import Pagination from "@/app/_components/Pagination";
 import SearchField from "@/app/_components/SearchField";
 import { NEWS_LIST_LIMIT } from "../_constants";
 
-//キャッシュの保持時間を0
-export const revalidate = 60;
-
 export default async function page() {
   const { contents: news, totalCount } = await getNewsList({
     limit: NEWS_LIST_LIMIT,
